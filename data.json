@@ -1,0 +1,33 @@
+
+[
+    {
+        "imagen": "https://acdn.mitiendanube.com/stores/002/872/034/products/4613d7331-ba97feb8ecbd69550316773847895589-480-0.webp",
+        "titulo": "Arsenal 1998 - 99",
+        "precio": 59000
+    },
+    {
+        "imagen": "https://retrocampeones.com/cdn/shop/files/424e0571.jpg?v=1712257761&width=493",
+        "titulo": "Argentina 1986",
+        "precio": 69000
+    },
+    {
+        "imagen": "https://acdn.mitiendanube.com/stores/002/872/034/products/19a694a41-c7f39012eb053a51dc16789779553651-480-0.webp",
+        "titulo": "Manchester United 2004 - 06",
+        "precio": 59000
+    },
+    {
+        "imagen": "https://acdn.mitiendanube.com/stores/004/269/759/products/tit-87-88-retro-1-10826838111c3f5c6b17074537101820-640-0.webp",
+        "titulo": "Napoli 1987-88",
+        "precio": 61000
+    },
+    {
+        "imagen": "https://acdn.mitiendanube.com/stores/004/269/759/products/tit-96-retro-1-16cd6cc0d1d75963f717074377659954-640-0.webp",
+        "titulo": "AC Milan 1996",
+        "precio": 52000
+    },
+    {
+        "imagen": "https://acdn.mitiendanube.com/stores/004/269/759/products/sup-97-98-retro-1-18c5dfe09fa7bb0c5117074506420426-640-0.webp",
+        "titulo": "Inter Milan 1997-98 Suplente",
+        "precio": 52000
+    }
+]

@@ -2,10 +2,12 @@ const url = "./data.json";
 const productos = document.getElementById("productos")
 const carrito = document.getElementById("carrito")
 const Carrito = JSON.parse(localStorage.getItem("carrito")) || []
+const botonCompraDOM = document.getElementById("botonCompra")
 
 fetch(url)
 .then(res => res.json())
 .then(data => mostrarProductos(data))
+
 
 
 const restadoraAlCarrito = (titulo) => {
@@ -80,13 +82,15 @@ const creadoraDeCardsDeCarrito = (titulo, precio, cantidad) => {
 const actualizadoraDeCarrito = () => {
     carrito.innerHTML = ""
 
-    const totalDOM = document.createElement("h3")
 
     const total = Carrito.reduce((acc, el)=>{
         return acc + el.cantidad * el.precio
     },0)
 
-    totalDOM.innerText = total
+    botonCompraDOM.addEventListener("click",()=>{
+        Swal.fire("El total de su compra es de $" + total);
+    })
+    
 
     Carrito.forEach(el =>{
         carrito.appendChild(creadoraDeCardsDeCarrito(el.titulo, el.precio, el.cantidad))
@@ -99,6 +103,7 @@ const actualizadoraDeCarrito = () => {
 const agregadoraAlCarrito = (titulo, precio) => {
     const booleano = Carrito.some(el => {
         return el.titulo === titulo
+
     })
 
     if(booleano){

@@ -63,3 +63,16 @@ main{
     background-color: white;
     border: 5px double #2b5c1d ;
 }
+
+h3{
+    color: #2b5c1d;
+    
+}
+
+#botonCompra{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}

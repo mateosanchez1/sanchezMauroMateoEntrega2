@@ -24,9 +24,9 @@ main{
 }
 
 #carrito{
-    width: 80%;
-    margin: 5px auto;
-    display: flex;
+    width: 40%;
+    margin: auto;
+    display: none;
     flex-wrap: wrap;
     background-color: white;
 }
@@ -72,6 +72,15 @@ h3{
 #botonCompra{
     width: 100px;
     height: 50px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#carritoCompra{
+    width: 200px;
+    height: 70px;
+    background-color: burlywood;
     position: absolute;
     right: 10px;
     top: 10px;

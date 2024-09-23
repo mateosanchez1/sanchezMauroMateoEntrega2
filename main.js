@@ -86,7 +86,7 @@ const actualizadoraDeCarrito = () => {
     }, 0);
     
     const totalDOM = document.createElement("p");
-    totalDOM.innerText = "Total de compra: $" + total; // Formatear a dos decimales
+    totalDOM.innerText = "Total de compra: $" + total; 
 
     botonCompraDOM.addEventListener("click", () => {
         Swal.fire("El total de su compra es de $" + total);
@@ -96,7 +96,8 @@ const actualizadoraDeCarrito = () => {
         carrito.appendChild(creadoraDeCardsDeCarrito(el.titulo, el.precio, el.cantidad));
     });
 
-    carrito.appendChild(totalDOM); // Asegúrate de agregar el total al carrito
+    carrito.appendChild(totalDOM); 
+    carrito.appendChild(botonCompraDOM);
     localStorage.setItem("carrito", JSON.stringify(Carrito));
 }
 

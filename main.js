@@ -53,7 +53,7 @@ const creadoraDeCardsDeCarrito = (titulo, precio, cantidad) => {
     cantidadDOM.classList.add("cantidad")
 
     tituloDOM.innerText = titulo
-    precioDOM.innerText = precio
+    precioDOM.innerText = "$" + (precio * cantidad);
     cantidadDOM.innerText = cantidad
 
     botonPlusDOM.innerText = "+"
